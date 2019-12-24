@@ -1,6 +1,11 @@
 import React from 'react';
+/* Import NPM */
+import PropTypes from 'prop-types';
+/* Import JS */
+
+/* Import Styles */
 import styles from './Column.scss';
-import PropTypes from 'prop-types'
+
 
 class Column extends React.Component {
     static propTypes = {
