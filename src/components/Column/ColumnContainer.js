@@ -1,10 +1,9 @@
 import {connect} from 'react-redux';
 import Column from './Column';
-import {getCardsForColumn} from '../../redux/cardRedux';
-import {createActionAddCard} from '../../redux/cardRedux';
+import {getCardsForColumn, createActionAddCard} from '../../redux/cardRedux';
 
 const mapStateToProps = (state, props) => ({
-  cards: getCardsForColumn(state, props.id),
+  cards: getCardsForColumn(state, props.id, state.searchString),
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
