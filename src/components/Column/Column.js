@@ -11,7 +11,7 @@ import styles from './Column.scss';
 
 
 class Column extends React.Component {
-
+  
     static propTypes = {
       title: PropTypes.string.isRequired,
       cards: PropTypes.array,
