@@ -228,6 +228,8 @@ const cards = [
 
     title: 'This Is Going to Hurt',
 
+    index: 0,
+
   },
 
   {
@@ -237,6 +239,8 @@ const cards = [
     columnId: 'column-1',
 
     title: 'Interpreter of Maladies',
+
+    index: 1,
 
   },
 
@@ -248,6 +252,8 @@ const cards = [
 
     title: 'Harry Potter',
 
+    index: 0,
+
   },
 
   {
@@ -257,6 +263,8 @@ const cards = [
     columnId: 'column-2',
 
     title: 'Star Wars',
+
+    index: 1,
 
   },
 
@@ -268,6 +276,8 @@ const cards = [
 
     title: 'The Witcher',
 
+    index: 0,
+
   },
 
   {
@@ -277,6 +287,8 @@ const cards = [
     columnId: 'column-3',
 
     title: 'Skyrim',
+
+    index: 1,
 
   },
 
