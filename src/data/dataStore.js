@@ -26,6 +26,26 @@ export const settings = {
 
   defaultColumnIcon: 'list-alt',
 
+  info: {
+    title: 'General information about project',
+    image: 'https://cdn.pixabay.com/photo/2012/01/09/09/59/earth-11595_960_720.jpg',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    author: 'Filip Taczkowski',
+  },
+
+  faq: {
+    title: 'Frequently asked questions',
+    image: 'https://cdn.pixabay.com/photo/2015/11/07/11/02/milky-way-1030765_960_720.jpg',
+    questions: [
+      'Who is the author?',
+      'Filp Taczkowski',
+      'What is it about?',
+      'Simple TO-DO app to track whatever you want',
+      'Why was it made?',
+      'It was primarly made to learn React :)',
+    ],
+  },
+
 };
 
 

@@ -1,0 +1,19 @@
+@import '../../styles/settings.scss';
+
+.faq__list {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  list-style: none;
+  border: 3px solid $color-light;
+  border-radius: 5px;
+
+  li {
+    &:nth-child(odd) {
+      color: $color-warning;
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 10px;
+    }
+  }
+}

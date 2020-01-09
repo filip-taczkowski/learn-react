@@ -1,43 +1,23 @@
 import React from 'react';
 /* Import NPM */
-import {DragDropContext} from 'react-beautiful-dnd';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 /* Import JS */
-import List from '../List/ListContainer';
-import PropTypes from 'prop-types';
-import Search from '../Search/SearchContainer';
+import Home from '../Home/HomeContainer';
+import Info from '../Info/Info';
+import MainLayout from '../MainLayout/MainLayout';
+import Faq from '../Faq/Faq';
 /* Import Styles */
-import styles from './App.scss';
-//import { listData } from '../../data/dataStore';
 
-
-
-class App extends React.Component {
-  static propTypes = {
-    title: PropTypes.node,
-    subtitle: PropTypes.node,
-    lists: PropTypes.array,
-  }
-
-  render() {
-    const {title, subtitle, lists} = this.props;
-
-    const moveCardHandler = result => {
-      console.log(result);
-    };
-
-    return (
-      <main className={styles.component}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search />
-        <DragDropContext onDragEnd={moveCardHandler}>
-          {lists.map(listData => (
-            <List key={listData.id} {...listData} />
-          ))}
-        </DragDropContext>
-      </main>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <MainLayout>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/info' component={Info} />
+        <Route exact path='/faq' component={Faq} />
+      </Switch>
+    </MainLayout>
+  </BrowserRouter>
+);
 
 export default App;
