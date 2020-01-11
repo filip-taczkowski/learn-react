@@ -10,7 +10,6 @@ import styles from './Home.scss';
 //import { listData } from '../../data/dataStore';
 
 
-
 class Home extends React.Component {
   static propTypes = {
     title: PropTypes.node,
@@ -22,7 +21,27 @@ class Home extends React.Component {
     const {title, subtitle, lists} = this.props;
 
     const moveCardHandler = result => {
-      console.log(result);
+      if(
+        result.destination
+        &&
+        (
+          result.destination.index != result.source.index
+          ||
+          result.destination.droppableId != result.source.droppableId
+        )
+      ){
+        console.log({
+          id: result.draggableId,
+          dest: {
+            index: result.destination.index,
+            columnId: result.destination.droppableId,
+          },
+          src: {
+            index: result.source.index,
+            columnId: result.source.droppableId,
+          },
+        });
+      }
     };
 
     return (
