@@ -180,6 +180,30 @@ const lists = [
 
   },
 
+  {
+
+    id: 'list-2',
+
+    title: 'Books I want to read this year!',
+
+    description: 'List of books and series I want to read in 2020!',
+
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+
+  },
+
+  {
+
+    id: 'list-3',
+
+    title: 'Games I want to play this yesr!',
+
+    description: 'List of games I want to play in 2020!',
+
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+
+  },
+
 ];
 
 

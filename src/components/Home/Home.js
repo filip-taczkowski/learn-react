@@ -1,10 +1,9 @@
 import React from 'react';
 /* Import NPM */
-import {DragDropContext} from 'react-beautiful-dnd';
+//import {DragDropContext} from 'react-beautiful-dnd';
 /* Import JS */
-import List from '../List/ListContainer';
+import ListLink from '../ListLink/ListLink';
 import PropTypes from 'prop-types';
-import Search from '../Search/SearchContainer';
 /* Import Styles */
 import styles from './Home.scss';
 //import { listData } from '../../data/dataStore';
@@ -20,7 +19,7 @@ class Home extends React.Component {
   render() {
     const {title, subtitle, lists} = this.props;
 
-    const moveCardHandler = result => {
+    /*const moveCardHandler = result => {
       if(
         result.destination
         &&
@@ -42,18 +41,15 @@ class Home extends React.Component {
           },
         });
       }
-    };
+    };*/
 
     return (
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search />
-        <DragDropContext onDragEnd={moveCardHandler}>
-          {lists.map(listData => (
-            <List key={listData.id} {...listData} />
-          ))}
-        </DragDropContext>
+        {lists.map(listData => (
+          <ListLink key={listData.id} {...listData} />
+        ))}
       </main>
     );
   }

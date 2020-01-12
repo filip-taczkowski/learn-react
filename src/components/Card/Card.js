@@ -1,7 +1,7 @@
 import React from 'react';
 /* Import  NPM */
 import PropTypes from 'prop-types'; 
-import {Draggable} from 'react-beautiful-dnd';
+//import {Draggable} from 'react-beautiful-dnd';
 /* Import  JS */ 
 
 /* Import  Styles */ 
@@ -19,21 +19,10 @@ class Card extends React.Component {
     }
 
     render () {
-      const {title, id, index} = this.props;
+      const {title /*id, index*/} = this.props;
 
       return (
-        <Draggable draggableId={id} index={index}>
-          {(provided) => (
-            <article
-              className={styles.component}
-              {...provided.draggableProps}
-              {...provided.dragHandleProps}
-              ref={provided.innerRef}
-            >
-              {title}
-            </article>
-          )}
-        </Draggable>
+        <div className={styles.component}>{title}</div>
       );
     }
 }
