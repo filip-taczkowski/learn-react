@@ -8,6 +8,7 @@ import Info from '../Info/Info';
 import MainLayout from '../MainLayout/MainLayout';
 import Faq from '../Faq/Faq';
 import List from '../List/ListContainer';
+import SearchResult from '../SearchResult/SearchResult';
 /* Import Styles */
 import styles from './App.scss';
 
@@ -24,6 +25,7 @@ const App = () => (
         <Route exact path='/info' component={Info} />
         <Route exact path='/faq' component={Faq} />
         <Route exact path='/list/:id' component={List} />
+        <Route exact path='/search/:id' component={SearchResult} />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>

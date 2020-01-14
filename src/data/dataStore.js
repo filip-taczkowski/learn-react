@@ -258,6 +258,17 @@ const columns = [
 
   },
 
+  {
+
+    id: 'column-5',
+
+    listId: 'list-3',
+
+    title: 'Strange column',
+
+    icon: 'question',
+
+  },
 ];
 
 
