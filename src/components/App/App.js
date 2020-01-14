@@ -8,7 +8,7 @@ import Info from '../Info/Info';
 import MainLayout from '../MainLayout/MainLayout';
 import Faq from '../Faq/Faq';
 import List from '../List/ListContainer';
-import SearchResult from '../SearchResult/SearchResult';
+import SearchResult from '../SearchResult/SearchResultContainer';
 /* Import Styles */
 import styles from './App.scss';
 

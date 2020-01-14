@@ -196,7 +196,7 @@ const lists = [
 
     id: 'list-3',
 
-    title: 'Games I want to play this yesr!',
+    title: 'Games I want to play this year!',
 
     description: 'List of games I want to play in 2020!',
 

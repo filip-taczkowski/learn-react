@@ -7,11 +7,12 @@ import { createAction_changeSearchString } from '../../redux/searchStringRedux';
 
 const mapStateToProps = (state, props) => ({
   cards: getSearchCards(state, props.match.params.id),
-  lists: state.app.lists,
+  lists: state.lists,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
 });
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchResult);

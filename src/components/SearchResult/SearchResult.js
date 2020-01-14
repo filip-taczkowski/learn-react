@@ -24,8 +24,6 @@ class SearchResult extends React.Component {
             <Card key={cardData.id} {...cardData} />
           ))}
         </section>
-
-
       </Container>
     );
   }
